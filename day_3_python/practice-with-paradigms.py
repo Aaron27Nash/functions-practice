@@ -1,6 +1,6 @@
 class Podracer:
-    def __init__(self, a, b, c):
-       self.max_speed = max_speed
+    def __init__(self, speed, condition, price):
+       self.max_speed = speed
        self.condition = condition 
        self.price = price
     
@@ -21,7 +21,7 @@ class SebulbasPod(Podracer):
         podracer.condition = "trashed"   
 
 if __name__ == "__main__":
-    pod1 = Podracer(10, "old" , 200)
+    pod1 = Podracer(10, "old", 200)
     print(pod1.condition)
     pod1.repair()
-    print(pod1.conditon)       
+    print(pod1.condition)       
